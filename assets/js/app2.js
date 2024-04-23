@@ -24,5 +24,7 @@ const styleBoxes = () => {
 
 
 window.addEventListener("load", () => {
-    styleBoxes();
+    setTimeout(() => {
+        styleBoxes();
+    }, 1500)
 });
