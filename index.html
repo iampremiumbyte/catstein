@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <title>$CATSTEIN</title>
+  </head>
+  <body>
+    <img src="/pages/PAGE1.png" usemap="#image-map" />
+
+    <a class="box" href="#" id="box1"></a>
+    <a class="box" href="#" id="box2"></a>
+    <a class="box" href="#" id="box3"></a>
+
+    <map name="image-map">
+      <area
+        id="area1"
+        target=""
+        alt="socials"
+        title="socials"
+        href="/page4.html"
+        coords="301,941,672,1049"
+        shape="rect"
+      />
+      <area
+        id="area2"
+        target=""
+        alt="buy now"
+        title="buy now"
+        href="#"
+        coords="716,950,1118,1059"
+        shape="rect"
+      />
+      <area
+        id="area3"
+        target=""
+        alt="memes"
+        title="memes"
+        href="/page2.html"
+        coords="1152,962,1515,1059"
+        shape="rect"
+      />
+    </map>
+
+    <div class="overlay" id="overlay">
+      <div class="startwrap" id="startwrap">
+        <button id="startButton">ENTER CATSTEIN</button>
+      </div>
+      <video playsinline id="video" src="/assets/CATSTEIN.mov.mp4"></video>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.4.slim.min.js"
+      integrity="sha256-a2yjHM4jnF9f54xUQakjZGaqYs/V1CYvWpoqZzC2/Bw="
+      crossorigin="anonymous"
+    ></script>
+    <script src="/assets/js/rwdImageMaps.js"></script>
+    <script>
+      $(document).ready(function (e) {
+        $("img[usemap]").rwdImageMaps();
+      });
+    </script>
+    <script src="/assets/js/app.js"></script>
+  </body>
+</html>

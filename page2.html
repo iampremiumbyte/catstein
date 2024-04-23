@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <title>$CATSTEIN</title>
+  </head>
+  <body>
+    <img src="/pages/PAGE2.png" usemap="#image-map" />
+
+    <a class="box" href="#" id="box1"></a>
+    <a class="box" href="#" id="box2"></a>
+    <a class="box" href="#" id="box3"></a>
+    <a class="box" href="#" id="box4"></a>
+    <a class="box" href="#" id="box5"></a>
+
+    <map name="image-map">
+      <area
+        id="area1"
+        target=""
+        alt=""
+        title=""
+        href="/page3.html"
+        coords="760,745,1138,966"
+        shape="rect"
+      />
+      <area
+        id="area2"
+        target=""
+        alt=""
+        title=""
+        href="/page3.html"
+        coords="56,647,505,1065"
+        shape="rect"
+      />
+      <area
+        id="area3"
+        target=""
+        alt=""
+        title=""
+        href="/page3.html"
+        coords="1265,661,1887,1064"
+        shape="rect"
+      />
+      <area
+        id="area4"
+        target=""
+        alt=""
+        title=""
+        href="/page3.html"
+        coords="215,388,473,569"
+        shape="rect"
+      />
+      <area
+        id="area5"
+        target=""
+        alt=""
+        title=""
+        href="/page3.html"
+        coords="513,232,867,538"
+        shape="rect"
+      />
+    </map>
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.4.slim.min.js"
+      integrity="sha256-a2yjHM4jnF9f54xUQakjZGaqYs/V1CYvWpoqZzC2/Bw="
+      crossorigin="anonymous"
+    ></script>
+    <script src="/assets/js/rwdImageMaps.js"></script>
+    <script>
+      $(document).ready(function (e) {
+        $("img[usemap]").rwdImageMaps();
+      });
+    </script>
+    <script src="/assets/js/app2.js"></script>
+  </body>
+</html>
